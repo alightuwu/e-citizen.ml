@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <link rel = "icon" type="png" href="/assets/images/favi.png"type = "image/x-icon">
+        <title>ꕥ</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <div class="cursor"></div>
+
+                <div class="name">ꕥ alight</div>
+                
+                <div class="tele">
+                    <a href="https://t.me/acroze">telegram</a>
+                </div>
+                
+                <div class="twit">
+                    <a href="https://twitter.com/uwbie">twitter</a>
+                </div>
+
+                <div class="behance">
+                    <a href="http://be.net/al1ght">behance</a>
+                </div>
+
+
+            <audio autoplay loop>
+                <source src="assets/oneway.mp3" type="audio/mpeg">
+            </audio>
+
+        <script>
+            const cursor = document.querySelector(".cursor");
+
+            document.addEventListener("mousemove", e => {
+                cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px")
+            })
+
+            document.addEventListener('click', () => {
+                cursor.classList.add("expand");
+                setTimeout(() =>{
+                    cursor.classList.remove("expand");
+                }, 500)
+            })
+
+            function playAudio() {
+                document.querySelector('audio').play()
+            }
+        </script>
+        <div class="background">
+            <img src="assets/images/bg.gif" alt="background image"/> <!--Replace the gif file with something else-->
+        </div>
+</body>
+</html>
